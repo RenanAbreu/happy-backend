@@ -4,10 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "multer": "^1.4.2",
     "sqlite3": "^5.0.2",
     "tsc": "^2.0.3",
     "typeorm": "^0.2.34",
@@ -15,6 +17,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.12",
+    "@types/multer": "^1.4.7",
     "ts-node-dev": "^1.1.7"
   }
 }
